@@ -1,0 +1,39 @@
+.menu {
+    font-family: Number;
+    border-style: ridge;
+    border-radius: 20px;
+    background-image: url('../asset/windows_top.png');
+    background-repeat: no-repeat;
+    background-color: #292e34;
+    color: white;
+    width:35%;
+    text-shadow: -1.5px 0 1px black, 0 1.5px 1px black, 1.5px 0 1px black, 0 -1.5px 1px black;
+    padding: 15px;
+
+}
+
+
+#form {
+    top: 150;
+    font-size: 25;
+    line-height: 2;
+    position: fixed;
+    left: 550px;
+    text-align: center;
+
+}
+
+.menuButtons{
+    font-size: 20px;
+    background-color: #6a7787;
+    border-color: #6a7787;
+    border-style: outset;
+    width: 20%;
+}
+
+#fileUpload {
+    font-size: 20px;
+    background-color: #6a7787;
+    border-color: #6a7787;
+    border-style: solid;
+}

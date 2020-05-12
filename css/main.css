@@ -1,0 +1,27 @@
+@font-face {
+    font-family: FontMenu;
+    src: url("../asset/font/LinLibertine_aBS.ttf");
+}
+
+body {
+   -moz-transform: scale(0.8, 0.8);
+   zoom: 0.8;
+   zoom: 80%;
+   background-image: url('../asset/background.jpg');
+   background-size: cover;
+   background-repeat: repeat-x;
+   overflow: hidden;
+}
+
+
+
+#hideAll{
+   position: fixed;
+   left: 0px;
+   right: 0px;
+   top: 0px;
+   bottom: 0px;
+   background-color: #2b619b;
+   z-index: 99;
+
+ }

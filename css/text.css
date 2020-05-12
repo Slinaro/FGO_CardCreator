@@ -1,0 +1,43 @@
+@font-face {
+    font-family: FGOfont;
+    src: url("../asset/font/DoulosSILR.ttf");
+}
+
+@font-face {
+    font-family: Number;
+    src: url("../asset/font/LinLibertine_aBS.ttf");
+}
+
+.text {
+    font-family: FGOfont;
+    color: white;
+    width:100%;
+    text-align:center;
+    text-shadow: -1.5px 0 1px black, 0 1.5px 1px black, 1.5px 0 1px black, 0 -1.5px 1px black;
+    position: absolute;
+}
+
+#classText{
+    font-size: 50;
+    top: 79%;
+}
+
+#nameText{
+    font-size: 30;
+    top: 85%;
+}
+
+.stat {
+    font-family: Number;
+    font-size: 47;
+    top: 92.5%;
+
+}
+
+#atkText {
+    right: 26%;
+}
+
+#hpText {
+    left: 26%;
+}
