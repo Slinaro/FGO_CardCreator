@@ -130,7 +130,8 @@ define([
             this.class = "mooncancer";
         }
 
-
+        console.log(this.class)
+        console.log(this.class.toLowerCase())
 
         this.getColorFrame();
         this.classIcon.css("background-image", "url(asset/icons/" + this.class.toLowerCase() + "_"  + this.colorFrame +  ".png)")
