@@ -133,7 +133,7 @@ define([
 
 
         this.getColorFrame();
-        this.classIcon.css("background-image", "url(asset/icons/" + this.class + "_"  + this.colorFrame +  ".png)")
+        this.classIcon.css("background-image", "url(asset/icons/" + this.class.toLowerCase() + "_"  + this.colorFrame +  ".png)")
     }
 
 
