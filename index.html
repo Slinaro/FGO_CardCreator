@@ -1,0 +1,109 @@
+<head>
+  <meta charset="utf-8">
+  <title>FGO Servant Generator</title>
+
+  <link rel="icon" href="asset/icon.png">
+
+
+  <script
+src="http://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="ext_libs/html2canvas.js"></script>
+
+  <script src="./ext_libs/require.js" data-main="./scripts/main.js"></script>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/text.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/card.css">
+
+</head>
+
+<body>
+
+    <div id="hideAll">&nbsp;</div>
+
+      <form id="form" class="menu" action="/action_page.php">
+
+          Craft Essence:  <input type="checkbox" id="isCE" name="isCE">
+           <br>
+
+          Class: <select id="classChoice" class="menuButtons" >
+              <option>Archer</option>
+              <option>Assassin</option>
+              <option>Avenger</option>
+              <option>Berserker</option>
+              <option>Caster</option>
+              <option>Lancer</option>
+              <option>Rider</option>
+              <option>Ruler</option>
+              <option>Saber</option>
+              <option>Shielder</option>
+              <option>Foreigner</option>
+              <option>Alter Ego</option>
+              <option>Moon Cancer</option>
+          </select><br>
+
+
+          True Name: <input id="nameInput" type="text" name="TrueName" value="True Name" class="menuButtons"><br>
+
+          Rarity: <select id="rarityChoice" class="menuButtons">
+              <option>1★</option>
+              <option>2★</option>
+              <option>3★</option>
+              <option>4★</option>
+              <option>5★</option>
+          </select><br>
+
+           Attack: <input id="atkInput" type="number" name="atkInput" value="0000" class="menuButtons"><br>
+           Health: <input id="hpInput" type="number" name="hpInput" value="0000" class="menuButtons"><br>
+
+           Upload Picture : <input id="fileUpload" name="userfile" type="file"><br>
+
+            <button type="button" id="buttonDownload" class="menuButtons">Convert Into Picture</button> 🢂🢂🢂<br>
+			
+			(the picture can look pixalated but it will be fine on download)
+
+      </form>
+
+
+
+
+
+
+
+      <div id= 'templateCard'>
+
+          <div id="card">
+
+
+              <div id= 'cardPicture'></div>
+
+              <div id= 'cardFrame'>
+
+                  <div id= 'classIcon'></div>
+                  <div id= 'classText' class="text"></div>
+                  <div id= 'nameText' class="text"></div>
+                  <div id= 'atkText' class="text stat"></div>
+                  <div id= 'hpText' class="text stat"></div>
+
+
+              </div>
+
+          </div>
+
+        </div>
+
+        <div id="cardContainer">
+            <div id="result"></div>
+        </div>
+
+
+
+
+
+
+</body>
